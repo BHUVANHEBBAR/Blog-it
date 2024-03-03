@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            gap: 15em;
+            padding: 1em;
+            background-color: #FCDCED;
+            border-radius: 30px;
+            box-shadow: 0 0 1em white;
+        }
+        #headimg{
+            height: auto;
+            width: 50px;
+            object-fit: cover;
+            mix-blend-mode: color-burn;
+        }
+        a{
+            text-decoration: none;
+            font-size: 1.5em;
+            padding: 10px 20px;
+            transition: transform 0.3s ease;
+        }
+        a:hover{
+            box-shadow: 0 0 1em #A83B73;
+            border-radius: 30px;
+            transform: scale(1.1);
+            
+        }
+        img{
+            filter:
+            hue-rotate(20deg) saturate(20%) sepia(50%);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img id="headimg"src="https://www.clipartmax.com/png/small/310-3109096_white-letter-b-clip-art-at-clker-linked-in-icon-round-png.png">
+        <a href="/">Home</a>
+        
+        <a href="/post-create.html">Create Blog</a>
+    </nav>
+</body>
+</html>

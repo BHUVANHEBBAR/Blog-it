@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-css.css">
+    <title>Blogit Login</title>
+</head>
+<body>
+    <%- include('header.ejs') %>
+    <form method="POST" action="/login" id="form-login" >
+        <div class="form-body">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxgaxh2sjQEwAmh9iuei6dChBAI3HxYOKrsqlO9x7dS-o5ZfpIr-XT-Yp5LQ&s" alt="User-image">
+        <input class="input-field" type="text" name="username" id="username" placeholder="Username"><br>
+        <input class="input-field" type="password" name="password" id="password" placeholder="Password"><br>
+        <button type="submit" name="login" value="Login" class="lgn-btn">Login</button>
+        </div>
+    </form>
+    <%- include('footer.ejs') %>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="post-create.css">
+    <title>Blogit</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <img id="headimg"src="https://www.clipartmax.com/png/small/310-3109096_white-letter-b-clip-art-at-clker-linked-in-icon-round-png.png">
+        <a href="/">Home</a>
+        <a href="/posts">Blogs</a>
+    </nav>
+    <h1>Create Post 📝</h1>
+    <div class="div-outer">
+        <form id="createPostForm" action="/post-create" method="POST">
+            <div class="div-inner"><label for="title">Title</label><br>
+            <input type="text" id="title" name="title" required><br><br>
+            
+            <label for="content">Content</label><br>
+            <textarea id="content" name="content" rows="4" cols="50" required></textarea><br><br>
+            
+            <input type="submit" value="➕ Create" id="btn"></div>
+        </form>
+    </div>
+</body>
+</html>

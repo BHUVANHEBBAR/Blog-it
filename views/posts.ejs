@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="posts-css.css">
+    <title>Posts</title>
+</head>
+<body>
+    <%- include('header.ejs') %>
+    <h1>Posts</h1>
+    <div class="outer-div">
+    <% posts.forEach(post => { %>
+        <div class="inner-div">
+    <li>📝<%= post.postTitle %> <br> <p><%= post.postContent %></p>
+        <form action="/delete/<%= post.postID %>" method="post" >
+            <button type="submit" id="btn">🗑️</button>
+        </form>
+        
+    
+    </div>
+    </li>   
+
+    <% }); 
+    
+    %> 
+    
+    </div>
+    <%- include('footer.ejs') %>
+</body>
+
+</html>
